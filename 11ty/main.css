@@ -199,9 +199,9 @@ ul {
     margin-bottom: 30px;
 }
 
-.recent-posts .posts .post .meta,
-.post .post-header .meta,
-.list .posts .post .meta {
+.recent-posts .posts .post .time,
+.post .post-header .time,
+.list .posts .post .time {
     font-size: 0.725rem;
     color: #bec8d2;
     margin-bottom: 2px;
