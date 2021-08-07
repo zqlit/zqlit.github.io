@@ -31,4 +31,10 @@ function init() {
             autoplayControls: false
         });
     }
+    if($("#tcomment").length > 0){
+        twikoo.init({
+            envId: 'https://xiaoblog.vercel.app/',
+            el: '#tcomment'
+          })
+    }
 }
