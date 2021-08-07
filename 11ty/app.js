@@ -31,21 +31,4 @@ function init() {
             autoplayControls: false
         });
     }
-    if ($(".owl-carousel").length > 0) {
-        $(".owl-carousel").owlCarousel({
-            items: 2,
-            margin: 10,
-            dots: false,
-            nav: true,
-            responsiveClass: true,
-            responsive: {
-                0 : {
-                    items: 1
-                },
-                1000 : {
-                    items: 2
-                }
-            }
-        });
-    }
 }
