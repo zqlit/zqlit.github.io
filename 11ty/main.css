@@ -437,3 +437,33 @@ darkb-text:hover,
 darkb-text:active {
     color: #FFF;
 }
+
+/* 分页 */
+
+.pagination {
+    margin: 0;
+    padding: 10px 0 0;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination li {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.pagination .page-previous {
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+.pagination .page-item.page-previous {
+    text-align: right;
+}
+
+.pagination .page-item.page-next {
+    text-align: right;
+}
