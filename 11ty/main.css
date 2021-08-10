@@ -339,6 +339,40 @@ ul {
     }
 }
 
+/*回到顶部*/
+
+a.to_top {
+  text-decoration: none;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  background: #f0f0f0;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  line-height: 36px;
+  font-size: 18px;
+  text-align: center;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  display: none;
+}
+
+a.to_top span {
+  color: #888888;
+}
+
+a.to_top:hover {
+  cursor: pointer;
+  background: #dfdfdf;
+}
+
+a.to_top:hover span {
+  color: #555555;
+}
+
 /*美化框*/
 
 #mhz,
