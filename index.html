@@ -8,133 +8,42 @@
     <title>OOII.NET - 来自一个穷人的网站</title>
     <link rel="shortcut icon" href="https://xiaojunkang.com/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=0.9">
-    <style>
-         :root {
-            --main-dark-1: #22272e;
-            --main-dark-2: #2d333b;
-            --main-dark-3: #313a46;
-            --main-dark-4: #343d48;
-            --main-dark-5: #404c5a;
-            --main-dark-6: #4b5b6d;
-            --main-dark-8: #6d7986;
-            --main-dark-7: #467bc3;
-            --main-white-1: #fff;
-            --main-white-2: #adbac7;
-        }
-        
-        body {
-            background-color: var(--main-dark-1);
-            height: 100vh;
-            overflow: hidden;
-        }
-        
-        .warp {
-            width: 800px;
-            height: 100%;
-            margin: 0 auto;
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            padding: 30px;
-        }
-        
-        .user-warp {
-            background-color: var(--main-dark-4);
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px 30px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-        }
-        
-        .user-warp p {
-            color: var(--main-white-2)
-        }
-        
-        .user-warp img {
-            width: 70px;
-            border-radius: 100%;
-        }
-        
-        .pay-warp {
-            background-color: var(--main-dark-3);
-            padding: 50px 0;
-            border-radius: 8px;
-        }
-        
-        .qr-warp {
-            display: flex;
-            justify-content: space-evenly;
-            width: 500px;
-            margin: 0 auto;
-            align-items: center;
-        }
-        
-        .qr-warp .qr {
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .qr-warp .qr img {
-            width: 200px;
-        }
-        
-        .qr-warp .qr span {
-            margin-top: 20px;
-            color: var(--main-white-2);
-        }
-        
-        @media(max-width:800px) {
-            .warp {
-                width: auto;
-            }
-            .pay-warp {}
-        }
-        
-        @media(max-width:550px) {
-            body {
-                height: 100%;
-                overflow: auto;
-            }
-            .qr-warp {
-                flex-flow: column;
-                width: auto;
-                height: 500px;
-            }
-            .qr-warp .qr {
-                margin-bottom: 30px;
-            }
-        }
-    </style>
+    <meta name="HandheldFriendly" content="True" />
+    <link href="https://cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="warp">
-        <div class="user-warp">
-            <img src="https://q1.qlogo.cn/g?b=qq&nk=81462475&s=640" alt="tx">
-
-            <p id="hitokoto"><a id="hitokoto_text">:D 获取一言中...</a>
-                <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
-            </p>
-
-        </div>
-        <div class="pay-warp">
-            <div class="qr-warp">
-                <div class="qr">
-                    <img src="./img/wechat.jpg" alt="Wechat Pay">
-                    <span>微信扫码</span>
-                </div>
-                <div class="qr">
-                    <img src="./img/alipay.jpg" alt="Alipay">
-                    <span>支付宝扫码</span>
-                </div>
-            </div>
-        </div>
+    <div class="page-background"></div>
+    <div class="page-center">
+        <h2><a href="https://OOII.NET">OOII.NET</a></h2>
+    </div>
+    <div class="page-foot">
+        <p class="links"><a href="https://xiaojunkang.com/">About</a><a href="mailto:me@xiaojunkang.com">i@ooii.NET</a><a href="https://blog.xiaojunkang.com/" target="_blank">BLOG</a></p>
+        <p>&copy; 2015 - 2021 OOII.NET</p>
     </div>
 </body>
+<style>
+@import url('https://use.sevencdn.com/css2?family=Oswald:wght@200;400&display=swap');
+a,blockquote,body,code,h1,h2,h3,h4,h5,input,li,p,pre,textarea,ul,th,td{font-family:"Helvetica Neue","PingFang SC","Noto Sans SC","Hiragino Sans GB","Microsoft YaHei","Hiragino Kaku Gothic Pro",Meiryo,"Malgun Gothic",sans-serif}
+.page-background {position:fixed;bottom:0px;left:0;width:100%;height: 100%; background-image: url(https://www.7ed.net/bing/api);background-size: cover;background-repeat: no-repeat; background-color: #000;z-index: -1;}
+.page-center {margin-top:30vh;width:100%;text-align: center;color:#555;}
+.page-center h2 {color:#fff; font-size: 5.5em; font-family: 'Oswald', sans-serif; text-transform: uppercase; font-weight: 600;}
+.page-center h2 a {color: #fff; text-decoration: none;font-family: 'Oswald', sans-serif; }
+.page-center h2 a:hover {border: 4px solid #fff;padding: 10px 30px;}
+.page-foot p {margin-bottom: 40px;margin-top: 40px; color: #fff;}
+.page-foot .links a{text-decoration: none;color:#fff;margin: 20px; padding: 10px; border: 2px solid #fff;}
+.page-foot .links a:hover{color:#555;background-color: #fff;}
+.page-foot {position:fixed;bottom:0px;left:0;width:100%;text-align:center;color:#ddd;font-size:13px;text-transform: uppercase;background-image: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0) 0%,
+      rgba(0,0,0,0.4) 30%,
+      rgba(0,0,0,0.6) 50%,
+      rgba(0,0,0,0.8) 70%,
+      rgba(0,0,0,1) 100%);
+  }}
+@media (max-width:768px){
+    .page-center h2 {font-size: 20px;}
+}
+</style>
 
 </html>
